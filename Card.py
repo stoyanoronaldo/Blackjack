@@ -7,11 +7,10 @@ class Card:
         if (suit in SUITS) and (rank in RANKS):
             self.suit = suit
             self.rank = rank
-
         else:
             self.suit = None
             self.rank = None
-            print (f"Invalid card: {rank}{suit}")
+            print(f"Invalid card: {rank}{suit}")
 
     def __str__(self):
         return  self.rank + self.suit

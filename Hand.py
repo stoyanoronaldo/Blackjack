@@ -18,7 +18,7 @@ class Hand:
     def add_card(self, card: Card):
         self.cards.append(card)
 
-    def get_value(self):
+    def get_value(self) -> int:
         value: int = 0
         isAcePresent: bool = False
 
