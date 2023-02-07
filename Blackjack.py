@@ -18,29 +18,29 @@ game_display.fill(background_color)
 pygame.draw.rect(game_display, grey, pygame.Rect(0, 0, 200, 900))
 
 def text_objects(text: str, font: tuple[str, int]):
-    textSurface = font.render(text, True, black)
-    return textSurface, textSurface.get_rect()
+    text_surface = font.render(text, True, black)
+    return text_surface, text_surface.get_rect()
 
 def end_text_objects(text: str, font : tuple[str, int], color: tuple[int, int, int]):
-    textSurface = font.render(text, True, color)
-    return textSurface, textSurface.get_rect()
+    text_surface = font.render(text, True, color)
+    return text_surface, text_surface.get_rect()
 
 def game_texts(text: str, x: float, y: float):
-    TextSurf, TextRect = text_objects(text, textfont)
-    TextRect.center = (x, y)
-    game_display.blit(TextSurf, TextRect)
+    text_surf, text_rect = text_objects(text, textfont)
+    text_rect.center = (x, y)
+    game_display.blit(text_surf, text_rect)
     pygame.display.update()
 
 def game_finish(text: str, x: float, y: float, color: tuple[int, int, int]):
-    TextSurf, TextRect = end_text_objects(text, game_end, color)
-    TextRect.center = (x, y)
-    game_display.blit(TextSurf, TextRect)
+    text_surf, text_rect = end_text_objects(text, game_end, color)
+    text_rect.center = (x, y)
+    game_display.blit(text_surf, text_rect)
     pygame.display.update()
 
 def black_jack(text: str, x: float, y: float, color: tuple[int, int, int]):
-    TextSurf, TextRect = end_text_objects(text, blackjack, color)
-    TextRect.center = (x, y)
-    game_display.blit(TextSurf, TextRect)
+    text_surf, text_rect = end_text_objects(text, blackjack, color)
+    text_rect.center = (x, y)
+    game_display.blit(text_surf, text_rect)
     pygame.display.update()
 
 def button(name: str, x: float, y: float, width: float, height: float,
@@ -55,9 +55,9 @@ def button(name: str, x: float, y: float, width: float, height: float,
     else:
         pygame.draw.rect(game_display, inactive, (x, y, width, height))
 
-    TextSurf, TextRect = text_objects(name, font)
-    TextRect.center = ((x + (width/2)), (y + (height/2)))
-    game_display.blit(TextSurf, TextRect)
+    text_surf, text_rect = text_objects(name, font)
+    text_rect.center = ((x + (width/2)), (y + (height/2)))
+    game_display.blit(text_surf, text_rect)
 
 fd = open(os.path.join('D:/', 'Blackjack python', 'Blackjack', 'statistics.txt'))
 statistics: str = fd.read()
@@ -264,6 +264,7 @@ class Play:
                     hint_string = "Stand"
 
             game_texts(f"Hint: {hint_string}", 450, 650)
+            hint_string = ''
 
     def exit(self):
         fd = open(os.path.join('D:/', 'Blackjack python', 'Blackjack', 'statistics.txt'), 'w')
