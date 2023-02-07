@@ -1,5 +1,1 @@
-{"Money": 10000,
-"Wins": 0,
-"Ties": 0,
-"Loses": 0,
-"Blackjacks": 0}
+{"Money": 8500, "Wins": 9, "Ties": 1, "Loses": 16, "Blackjacks": 0}

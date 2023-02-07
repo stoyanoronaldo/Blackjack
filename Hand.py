@@ -20,15 +20,15 @@ class Hand:
 
     def get_value(self) -> int:
         value: int = 0
-        isAcePresent: bool = False
+        is_ace_present: bool = False
 
         for card in self.cards:
             value = value + VALUES[card.rank]
 
-            if value == 1:
-                isAcePresent = True
+            if VALUES[card.rank] == 1:
+                is_ace_present = True
 
-        if (isAcePresent) and ((value + 10) <= 21):
+        if (is_ace_present) and ((value + 10) <= 21):
             value = value + 10
 
         return value
