@@ -12,14 +12,14 @@ After you start the application you have to enter an integer in the bet text box
 
 ## GUI images
 ### Starting screen
-[Starting screen](https://github.com/stoyanoronaldo/Blackjack/blob/main/GUI%20images/Screenshot%202023-02-07%20160059.png)
+![Starting screen](https://github.com/stoyanoronaldo/Blackjack/blob/main/GUI%20images/Screenshot%202023-02-07%20160059.png)
 
 ### Ingame screen
-[Ingame screen](https://github.com/stoyanoronaldo/Blackjack/blob/main/GUI%20images/Screenshot%202023-02-07%20160146.png)
+![Ingame screen](https://github.com/stoyanoronaldo/Blackjack/blob/main/GUI%20images/Screenshot%202023-02-07%20160146.png)
 
 ### Hint screen
-[Hint screen](https://github.com/stoyanoronaldo/Blackjack/blob/main/GUI%20images/Screenshot%202023-02-07%20160229.png)
+![Hint screen](https://github.com/stoyanoronaldo/Blackjack/blob/main/GUI%20images/Screenshot%202023-02-07%20160229.png)
 
 ### Ending screen
-[Ending screen](https://github.com/stoyanoronaldo/Blackjack/blob/main/GUI%20images/Screenshot%202023-02-07%20160413.png)
+![Ending screen](https://github.com/stoyanoronaldo/Blackjack/blob/main/GUI%20images/Screenshot%202023-02-07%20160413.png)
 
